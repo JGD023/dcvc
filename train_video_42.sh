@@ -1,0 +1,11 @@
+python3 train_video.py \
+--train_dataset /home/hynx/data/data/vimeo_train_dataset \
+--train_batch_size 16 --train_patch_size 256 256 --train_frame_num 7 \
+--train_frame_selection random --train_max_frame_distance 6 \
+--train_random_flip 1 --train_min_zoom_factor 1.0 --train_max_zoom_factor 1.0 \
+--test_dataset /home/hynx/data/data/vimeo_test_dataset --test_batch_size 8 \
+--test_patch_size 256 256 --test_frame_num 2 --cuda 1 \
+--i_frame_model_name DMCI --Pyuv420 False --Iyuv420 False \
+-n 4 --epochs 41 --training_scheduling pretrain --num_epoch_per_checkpoint 1 --load_checkpoint 1 \
+--save_dir ./video_ckpts_42/ --task_id 0 --lambda 42 --cuda_idx 0 1 2 3 --i_net_qp 21 \
+--i_frame_model_path ./ckpts/cvpr2025_image.pth.tar

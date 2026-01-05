@@ -1,0 +1,16 @@
+{
+    "root_path": "/home/hynx/data/data",
+    "test_classes": {
+        "HEVC_C": {
+            "test": 1,
+            "base_path": "HEVC_B_png",
+            "src_type": "png",
+            "sequences": {
+		        "BasketballPass_416x240_50":    {"width": 416, "height": 240, "frames": 500, "intra_period": -1},
+                "BlowingBubbles_416x240_50":    {"width": 416, "height": 240, "frames": 500, "intra_period": -1},
+                "BQSquare_416x240_60":          {"width": 416, "height": 240, "frames": 600, "intra_period": -1},
+                "RaceHorses_416x240_30":        {"width": 416, "height": 240, "frames": 300, "intra_period": -1}
+            }
+        }
+    }
+}
